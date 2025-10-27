@@ -1,0 +1,21 @@
+.boxMine{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    background-color: rgb(104, 104, 104);
+    margin: 5px;
+}
+
+.boxRow{
+    display: flex;
+}
+
+#cashOut{
+    display: none;
+}
+
+.balanceBox{
+    display: flex;
+    flex-direction: row;
+}

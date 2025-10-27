@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Game</title>
+    <link rel="stylesheet" href="/css/mine.css">
+</head>
+<body>
+    <div class="balanceBox">
+            <p>Your Balance:</p>
+            <p id="balance"></p>
+    </div>
+    <div id="topButtons">
+        <label for="size">Select the Size of the grid:</label>
+        <select name="size" id="size">
+            <option value="3">3x3</option>
+            <option value="4">4x4</option>
+            <option value="5">5x5</option>
+            <option value="6">6x6</option>
+        </select>
+        <label for="countMines">Number of Mines:</label>
+        <input type="number" name="countMines" id="countMines" min="1">
+        <label for="bet">Amount to bet</label>
+        <input type="number" name="bet" id="bet" min="0">
+        <button id="startGame">Start Game</button>
+    </div>
+    <div class="mainDiv">
+        <div id="mainDiv">
+            <!-- <div class="boxRow">
+                <div class="boxMine"></div>
+                <div class="boxMine"></div>
+                <div class="boxMine"></div>
+            </div> -->
+        </div>
+        <div>
+            <h2 id="multiplier"></h2>
+        </div>
+    </div>
+    <button id="cashOut">Cash-Out</button>
+    <h2 id="displayStatus"></h2>
+    <script src="/JS/mine.js"></script>
+</body>
+</html>
