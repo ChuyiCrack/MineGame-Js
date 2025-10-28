@@ -10,6 +10,7 @@
     <div class="balanceBox">
             <p>Your Balance:</p>
             <p id="balance"></p>
+            
     </div>
     <div id="topButtons">
         <label for="size">Select the Size of the grid:</label>
@@ -23,8 +24,11 @@
         <input type="number" name="countMines" id="countMines" min="1">
         <label for="bet">Amount to bet</label>
         <input type="number" name="bet" id="bet" min="0">
+        <button id="allIn">All In</button>
         <button id="startGame">Start Game</button>
     </div>
+    <div id="errorBox"></div>
+    <h3 id="labelWinLoose"></h3>
     <div class="mainDiv">
         <div id="mainDiv">
             <!-- <div class="boxRow">
@@ -35,10 +39,12 @@
         </div>
         <div>
             <h2 id="multiplier"></h2>
+            <h2 id="moneyMultiplied"></h2>
         </div>
     </div>
     <button id="cashOut">Cash-Out</button>
     <h2 id="displayStatus"></h2>
+    <button id="resetBalance">Reset Balance</button>
     <script src="/JS/mine.js"></script>
 </body>
 </html>
